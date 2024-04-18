@@ -68,7 +68,8 @@ footer{
         width: 70%;
         height: 80%;
         padding: 10px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: italic;
         font-size: 20px;
@@ -82,7 +83,8 @@ footer{
         width: 90%;
         height: 100%;
         padding: 10px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     footer{
         position: fixed;
