@@ -1,3 +1,7 @@
+@media only screen and (min-width: 800px){
+    /* smaller devices */
+}
+
 body{
     text-align: center;
     margin: auto;
@@ -25,6 +29,12 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 30px;
+    font-weight: medium;
+}
+section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 15px;
     font-weight: medium;
 }
 footer{
