@@ -1,7 +1,6 @@
 
 body{
     text-align: center;
-    background-color: #e9f7da;
 }
 header li{
     list-style: none;
@@ -153,18 +152,17 @@ img{
     color: blue;
 }
 /* For mobile and smaller screens */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
     body{
-        width: 500px;
-        height: 100vh;
+        width: 370px;
+        height: 270px;
         text-align: center;
-        background-color: #e9f7da;
     }
     header li{
         list-style: none;
         display: inline-block;
         padding: 10px;
-        margin: 20px;
+        margin: 14px;
     }
     h1{
         font-family: monospace;
@@ -172,9 +170,10 @@ img{
         font-weight: bold;
     }
     p{
-        width: 70%;
-        height: 80%;
+        width: 320px;
+        height: 200px;
         padding: 10px;
+        line-height: 250%;
         margin-left: auto;
         margin-right: auto;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -230,15 +229,16 @@ img{
     dd{
         margin: auto;
         font-size: medium;
-        line-height: 125%;
+        line-height: 250%;
     }
     .contact{
         width: 300px;
-        height: 350px;
-        margin: auto;
-        padding-top: 10px;
+        height: 250px;
     }
     .form-row {
+        width: 300px;
+        font-size: 14px;
+        line-height: 24px;
         display: flex;
         align-items: center;
         justify-content: center;
