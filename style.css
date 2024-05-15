@@ -1,7 +1,6 @@
 
 body{
     text-align: center;
-    margin: auto;
     background-color: #e9f7da;
 }
 header li{
@@ -11,9 +10,9 @@ header li{
     margin: 50px;
 }
 .home-menu{
-display: flex;
-align-items: center;
-justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 h1{
@@ -21,6 +20,15 @@ h1{
     font-size: 40px;
     font-weight: bold;
 }
+.contactText{
+    width: 45%;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: medium;
+}
+
 p{
     width: 45%;
     margin: auto;
@@ -29,7 +37,7 @@ p{
     font-size: 30px;
     font-weight: medium;
 }
-section{
+main{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 15px;
@@ -43,14 +51,113 @@ footer{
     height: 50px;
     width: 100%;
     background: #f9faf9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.eat{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.read{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.music{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} 
+.anime{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+dt{
+    margin: auto;
+}
+dd{
+    margin: auto;
+    font-size: medium;
+    line-height: 125%;
 }
 
+.contact{
+    width: 450px;
+    height: 350px;
+    margin: auto;
+    padding-top: 30px;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#contact-form-name{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+#contact-form-email{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+#contact-form-message{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin-left: 30px;
+    border-radius: 15px;
+    background-color: rgb(34, 134, 34);
+    color: white;
+}
+
+.form-input {
+    display: block;
+}
+
+.form-error {
+    color: red;
+}
+
+.project{
+    display: flex;
+}
+.github{
+    flex: 1;
+}
+.github:first-child{
+    margin-right: 20px;
+}
+.behance{
+    flex: 1;
+}
+.behance:first-child{
+    margin-right: 20px;
+}
+img{
+    width: 500px;
+    height: 350px;
+}
+.view{
+    margin-left: 70%;
+    text-decoration: underline;
+    color: blue;
+}
+/* For mobile and smaller screens */
 @media only screen and (max-width: 800px){
     body{
-        width: 400px;
+        width: 500px;
         height: 100vh;
         text-align: center;
-        margin: auto;
         background-color: #e9f7da;
     }
     header li{
@@ -75,13 +182,13 @@ footer{
         font-size: 20px;
         font-weight: medium;
     }
-    section{
+    
+    main{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: italic;
         font-size: 20px;
         font-weight: medium;
         width: 90%;
-        height: 100%;
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -93,5 +200,104 @@ footer{
         height: 30px;
         width: 100%;
         background: #f9faf9;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
+    .eat{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .read{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .music{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    } 
+    .anime{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    dt{
+        margin: auto;
+    }
+    dd{
+        margin: auto;
+        font-size: medium;
+        line-height: 125%;
+    }
+    .contact{
+        width: 300px;
+        height: 350px;
+        margin: auto;
+        padding-top: 10px;
+    }
+    .form-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    #contact-form-name{
+        width: 200px;
+        height: 20px;
+        border-radius: 5px;
+    }
+    #contact-form-email{
+        width: 200px;
+        height: 20px;
+        border-radius: 5px;
+    }
+    #contact-form-message{
+        width: 200px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    button{
+        width: 150px;
+        height: 40px;
+        margin-left: 30px;
+        border-radius: 15px;
+        background-color: rgb(34, 134, 34);
+        color: white;
+    }
+    
+    .form-input {
+        display: block;
+    }
+    
+    .form-error {
+        color: red;
+    }
+    .project{
+        display: flex;
+    }
+    .github{
+        flex: 1;
+    }
+    .github:first-child{
+        margin-right: 20px;
+    }
+    .behance{
+        flex: 1;
+    }
+    .behance:first-child{
+        margin-right: 20px;
+    }
+    img{
+        width: 150px;
+        height: 100px;
+    }
+    .view{
+        margin-left: 70%;
+        text-decoration: underline;
+        color: blue;
+    }
+    
 }

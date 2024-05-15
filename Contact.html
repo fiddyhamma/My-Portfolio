@@ -6,16 +6,47 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
 </head>
 <body>
+
     <header>
         <nav class="home-menu">
-            <a class="material-icons" href="./index.html"> home </a>
+            <a class="material-icons toggle" href="./index.html" id="toggler"> home </a>
             <div class="menu2">
-            <li><a href="./About.html">About</a></li>
-            <li><a href="./Project.html">Project</a></li>
-            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./About.html" class="toggle" >About</a></li>
+            <li><a href="./Project.html" class="toggle">Project</a></li>
+            <li><a href="./Contact.html" class="toggle">Contact</a></li>
         </div>
+        <a class="material-icons" id="light"> light </a>
+        <a class="material-icons" id="dark" style= "display:none";> light </a>
         </nav>
     </header>
+    
+    <main>
+        <h2> Contact me</h2>
+        <p class="contactText">Get in touch or send an email directly on peacedaniel612@gmail.com</p>
+        <br>
+        <div class="contact">
+            <form id="contact-form" method="POST" action="sendmail.php">
+                <div class="form-row form-error" style="display:none;"></div>
+                <div class="form-row">
+                  <label for="contact-form-name">Name:</label>
+                  <input id="contact-form-name" class="form-input" type="text" name="name" required>
+                </div>
+                <div class="form-row">
+                  <label for="contact-form-email">Email:</label>
+                  <input id="contact-form-email" class="form-input" type="email" name="email" required>
+                </div>
+                <div class="form-row">
+                  <label for="contact-form-message">Message:</label>
+                  <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+    </main>
+
+    <script src="./jquery.js"></script>
+    
 </body>

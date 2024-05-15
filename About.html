@@ -6,34 +6,41 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
 </head>
 <body>
+
     <header>
         <nav class="home-menu">
-            <a class="material-icons" href="./index.html"> home </a>
+            <a class="material-icons toggle" href="./index.html" id="toggler"> home </a>
             <div class="menu2">
-            <li><a href="./About.html">About</a></li>
-            <li><a href="./Project.html">Project</a></li>
-            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./About.html" class="toggle" >About</a></li>
+            <li><a href="./Project.html" class="toggle">Project</a></li>
+            <li><a href="./Contact.html" class="toggle">Contact</a></li>
         </div>
+        <a class="material-icons" id="light"> light </a>
+        <a class="material-icons" id="dark" style= "display:none";> light </a>
         </nav>
     </header>
+
+    <main>
+
     <h3> About Me.</h1>
+
     <section>
         <dl>
-            <dt> Engineering and Open source </dt>
+            <dt> Engineering and Open source <a href="https://www.github.com/fiddyhamma" target="_blank"> View Github</a> </dt>
             <br>
-            <dd> <a href="https://www.github.com/fiddyhamma"> View Github</a> </dd>
-            <dd class="des1"> I have few projects on Github and they might not be all fancy but they're my humble beginnings
+            <dd> I have few projects on Github and they might not be all fancy but they're my humble beginnings
                 <br>
                 I contribute actively to Bioconductors, Chaoss and sometimes to Open Source Design
             </dd>
             <br>
             <br>
-            <dt> Design </dt>
-            <br>
-            <dd> <a href="https://www.behance.net/fiddyhamma"> View Behance</a> </dd>
-            <dd class="des2"> Design is my everything!
+        </dl>
+            <dl>
+            <dt> Design is my everything! <a href="https://www.behance.net/fiddyhamma" target="_blank"> View Behance</a> </dt> 
+                <br>
                 <br>
                 I love the ability to bring concepts and my thought process to life and I'm pleased to share with you. 
                 <br>This desire to see users interact with my product gave direction to my interesst in frontend development.
@@ -45,15 +52,19 @@
     
     <section>
         <dl>
-            <dt> My hobbies</dt>
+            <dt> Hobbies</dt>
             <br>
             <dd>
                 In no particular order, my hobbies are:
-                <br> Eating 
-                <br> Reading novels (Jane Austen's my favorite)
-                <br> Classical music and 60's
-                <br> Binge watching anime
+                 <div class="eat"> <a class="material-icons"> forward</a>  Eating </div>
+                 <div class="read"> <a class="material-icons"> forward</a>  Reading novels (Jane Austen's my favorite) </div>
+                 <div class="music"> <a class="material-icons"> forward</a>  Classical music and 60's </div>
+                 <div class="anime"> <a class="material-icons"> forward</a>  Binge watching anime </div>
             </dd>
         </dl>
     </section>
+</main>
+
+<script src="./jquery.js"></script>
+
 </body>
