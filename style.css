@@ -1,6 +1,7 @@
 
 body{
     text-align: center;
+    background-color: #e9f7da;
 }
 header li{
     list-style: none;
@@ -157,6 +158,7 @@ img{
         width: 370px;
         height: 270px;
         text-align: center;
+        background-color: #e9f7da;
     }
     header li{
         list-style: none;
